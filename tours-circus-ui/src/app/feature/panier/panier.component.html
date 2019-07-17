@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+    <div *ngFor="let reservation of reservation; let i = index">
+      <div class="col-xs-12 col-sm-4 col-md-4">
+        <div class="card text-white mb-3 d-inline-block" style="max-width: 20rem;">
+          <div class="card-header">
+            <h4>Numero de reservations:{{reservation.id}}</h4>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Nombres de places:{{reservation.nbPlace}}</h4>
+            <p class="card-text">Spectacle n° :{{reservation.spectacle_id}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <button type="button" class="btn btn-danger"[routerLink]='[""]'>Retour a la selection du spectacle</button>
+      <button type="button" class="btn btn-success">Valider ma commande</button>
+    </div>
+  </div>
+</div>

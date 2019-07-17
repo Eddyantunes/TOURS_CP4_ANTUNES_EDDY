@@ -1,0 +1,26 @@
+<h1>NOS SPECTACLES</h1>
+<div class="container">
+  <div class="row">
+    <div *ngFor="let spectacles of spectacles; let i = index">
+      <div class="col-xs-12 col-sm-4 col-md-4">
+        <div class="card text-black mb-3 d-inline-block" [routerLink]='[spectacles.id, "edit" ]'>
+          <div class="card-header">
+            <h4>{{spectacles.nom}}</h4>
+          </div>
+          <div class="card-body">
+            <img class="card-image" alt="img" src="{{spectacles.images}}">
+            <p class="card-text">{{spectacles.description}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-md-4">
+        <div class="card text-black mb-3 d-inline-block" [routerLink]='["edit" ]'>
+          <div class="card-header">
+            <h4>+</h4>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>

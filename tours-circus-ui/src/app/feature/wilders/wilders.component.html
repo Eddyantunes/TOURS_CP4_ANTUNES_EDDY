@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div *ngFor="let artiste of artiste; let i = index">
+      <div class="col-xs-12 col-sm-4 col-md-4">
+        <div class="card text-white mb-3 d-inline-block" style="max-width: 20rem;">
+          <div class="card-header">
+            <h4>{{artiste.nom}}</h4>
+          </div>
+          <div class="card-body">
+              <img class="card-image" alt="img" src="{{artiste.image}}">
+            <p class="card-text">{{artiste.description}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
