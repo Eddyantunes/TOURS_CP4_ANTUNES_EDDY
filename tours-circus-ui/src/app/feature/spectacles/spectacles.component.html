@@ -41,7 +41,7 @@
             <input type="artiste_id" class="form-control" formControlName="artiste_id"
               [ngClass]="{'is-invalid':form.get('artiste_id').touched && form.get('artiste_id').invalid}" />
             <div *ngIf="form.get('artiste_id').touched && form.get('artiste_id').invalid" class="invalid-feedback">
-              <div *ngIf="form.get('{{artiste_id').errors.required">artiste_id is required</div>
+              <div *ngIf="form.get('artiste_id').errors.required">artiste_id is required</div>
                 </div>
               </div>
             <div class="form-group">
